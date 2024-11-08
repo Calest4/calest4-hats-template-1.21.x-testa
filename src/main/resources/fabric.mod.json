@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "calest4-hats",
+	"version": "${version}",
+	"name": "Calest4 Hats",
+	"description": "Just a simple first mod i make",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ARR",
+	"icon": "assets/calest4-hats/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"sol.calest4.hat.Calest4Hats"
+		],
+		"fabric-datagen": [
+			"sol.calest4.hat.Calest4HatsDataGenerator"
+		],
+		"Client": [
+			"sol.calest4.hat.Calesta4Client"
+		]
+	},
+	"mixins": [
+		"calest4-hats.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
